@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
+import { lazy, Suspense } from "react";
+
+const MainPage = lazy(() => import("./MainPage/MainPage.jsx"));
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Тут будет наша свадьба!
-        </a>
-      </header>
+      <BrowserRouter>
+        <Suspense fallback={<div>Loading</div>}>
+          <Routes>
+            <Route path="/guest/:who" element={<MainPage />} />
+            <Route path="/" element={<div>hello all</div>} />
+          </Routes>
+        </Suspense>
+      </BrowserRouter>
     </div>
   );
 }
