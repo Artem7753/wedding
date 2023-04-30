@@ -1,0 +1,29 @@
+.program {
+  text-align: center;
+  background-color: #121f1373;
+  margin-top: 24px;
+  padding: 24px;
+}
+
+.program h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.program__list {
+  list-style: none;
+  padding: 0;
+}
+
+.program__item {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  list-style: none;
+}
+
+.program__time {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}

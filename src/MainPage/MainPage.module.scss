@@ -1,3 +1,51 @@
 .wrapper {
-    background-color: lightblue;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.428);
+}
+
+.menu {
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 24px;
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.content {
+  flex: 1;
+}
+
+.footer {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: white;
+  background-color: rgba(29, 28, 27, 0.724);
 }

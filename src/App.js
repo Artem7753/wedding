@@ -9,16 +9,16 @@ import {
 import { lazy, Suspense, useEffect } from "react";
 
 const MainPage = lazy(() => import("./MainPage/MainPage.jsx"));
-const RedirectPage = lazy(() => import("./RedirectPage/RedirectPage.jsx"));
+const InfoPage = lazy(() => import("./InfoPage/InfoPage.jsx"));
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="/wedding">
+      <BrowserRouter >
         <Suspense fallback={<div>Loading</div>}>
           <Routes>
             <Route path="/guest/:who" element={<MainPage />} />
-            <Route path="/" element={<RedirectPage />} />
+            <Route exact path="/" element={<InfoPage />} />
           </Routes>
         </Suspense>
       </BrowserRouter>
