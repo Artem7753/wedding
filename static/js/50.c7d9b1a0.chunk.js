@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwedding=self.webpackChunkwedding||[]).push([[50],{50:function(e,t,a){a.r(t);var n=a(791),r=a(689),u=a(184);t.default=function(){var e=(0,r.s0)();return(0,n.useEffect)((function(){var t=localStorage.getItem("path");t&&(localStorage.removeItem("path"),e(t))}),[]),(0,u.jsx)("div",{})}}}]);
+//# sourceMappingURL=50.c7d9b1a0.chunk.js.map
