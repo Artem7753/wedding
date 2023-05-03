@@ -5,6 +5,7 @@ export const Program = () => {
   return (
     <section class="program" id="#when">
       <h2>Программа мероприятия</h2>
+      <h3></h3>
       <ul class="program__list">
         <li class="program__item">
           <span class="program__time">15:00</span>

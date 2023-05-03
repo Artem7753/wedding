@@ -11,9 +11,10 @@ export const Banner = () => {
       </video>
       <div class="video-bg__overlay"></div>
       <div class="video-bg__content">
-        <h2>Йоу! Если ты видишь это сообщение, значит мы тебя ждем к нам в гости !))</h2>
-        <p>Уважаемые наши дорогие!</p>
-        <div class="video-bg__images">
+        <h2>Анна&Артем</h2>
+        <p>Дорогие наши гости!</p>
+        <p>Мы рады пригласить вас на нашу свадьбу! Мы оба так счастливы и воодушевлены и невероятно хотим поделиться этой радостью с вами. Мы хотим, чтобы этот день запомнился нам и вам на всю жизнь!</p>
+        {/* <div class="video-bg__images">
           <img
             src="https://1.downloader.disk.yandex.ru/preview/f5ccaca835b89b25f4a36a4ae6a6ba5dfd46e206952acf7f6560ef8435feae43/inf/CaRXLl8hG7FofUmm4Q5delYv0fH7Pb7hlD83KLvuiLaDQAJi_DBxHacvkCofedeVr4ODnvXcZsDS7isk8f9QCA%3D%3D?uid=163315002&filename=IMG_20230430_135052_194.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=163315002&tknv=v2&size=3456x1938"
             alt=""
@@ -24,7 +25,8 @@ export const Banner = () => {
             alt=""
             class="video-bg__image"
           />
-        </div>
+        </div> */}
+        <p>08 | ИЮЛЯ | 2023</p>
       </div>
     </div>
   );
