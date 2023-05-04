@@ -1,47 +1,53 @@
 .colors {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 24px;
-  }
-  
-  .colors h2 {
-    font-size: 24px;
-    margin-bottom: 24px;
-  }
-  
-  .colors__list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .colors__item {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 0 10px;
-  }
-  
-  .colors__item--red {
-    background-color: #c7f5ed;
-  }
-  
-  .colors__item--yellow {
-    background-color: #e5f5c7;
-  }
-  
-  .colors__item--green {
-    background-color: #a3c4bc;
-  }
-  
-  .colors__item--blue {
-    background-color: #b7c7d0;
-  }
-  
-  .colors__item--purple {
-    background-color: #f5bdbd;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 24px;
+  background-image: url('https://thumb.tildacdn.com/tild3232-3465-4434-b363-653766356633/-/format/webp/1599.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 850px;
+}
+
+.colors h3 {
+  padding: 0 50px;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.colors__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.colors__item {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.colors__item--red {
+  background-color: #c7f5ed;
+}
+
+.colors__item--yellow {
+  background-color: #e5f5c7;
+}
+
+.colors__item--green {
+  background-color: #a3c4bc;
+}
+
+.colors__item--blue {
+  background-color: #b7c7d0;
+}
+
+.colors__item--purple {
+  background-color: #f5bdbd;
+}

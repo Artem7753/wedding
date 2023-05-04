@@ -7,7 +7,12 @@ import { Colors } from "./colors/Colors";
 import { Banner } from "./banner/Banner";
 import { Program } from "./program/Program";
 import { Map } from "./map/Map";
-import Carousel from "./carousel/Carousel";
+import Carousel from "nuka-carousel"
+
+const images=[
+  "https://downloader.disk.yandex.ru/preview/8284d11980533b3aa918ca24a95fc6de532b9390744385fc8fc9d7acd2f02b2b/6453d645/Gz9xWIjEVN4roD4atqB9opHyAXQfItVoKtsOtfpjzHuEGBHfxgqzQUWybkudIODCWFZVHUUyJMMTWYcawahs_A%3D%3D?uid=0&filename=IMG_20230430_135103_369.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2048x2048",
+  "https://downloader.disk.yandex.ru/preview/3563f6b0fd552fd9c79fb15d9fedc764e50a4cd7aa2cf8c00b46b7145be02149/6453d71b/YboCw4_d2yQ34C1e5sepBauO4okp_0EOq9Z0eoeSmSxxZHV_nMI0o0VJ_L-QMk_54oD1bckfoH01GpHLAehhmQ%3D%3D?uid=0&filename=IMG20220712004248.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2048x2048",
+];
 
 const MainPage = () => {
   const { who } = useParams();
@@ -28,12 +33,11 @@ const MainPage = () => {
       </div>
       <div className={styles.content}>
         <Banner />
-        <Carousel
-          images={[
-            "https://1.downloader.disk.yandex.ru/preview/492e1e742c7e5ece9ba6ae162a43c940611584512f2c4e6c4eebf8e92e750d62/inf/Gz9xWIjEVN4roD4atqB9opHyAXQfItVoKtsOtfpjzHuEGBHfxgqzQUWybkudIODCWFZVHUUyJMMTWYcawahs_A%3D%3D?uid=163315002&filename=IMG_20230430_135103_369.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=163315002&tknv=v2&size=3456x1938",
-            "https://4.downloader.disk.yandex.ru/preview/60d9dba8c4db8154cb7b11618cb5288104b9c21f28709e3de0f0781e07788e82/inf/pMCgOBfWDj9B3QAiHZnTwJpfXhikDYiyea1lz2FHjkxb2JcNt9Frc5UEu0wD2dD6I_E53l6t0J9aMH-zxlPTaw%3D%3D?uid=163315002&filename=art_tor-49.JPG&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=163315002&tknv=v2&size=3456x1938",
-          ]}
-        />
+        <Carousel autoplay autoplayInterval={2} cellAlign='center' adaptiveHeight>
+          {images.map((image, index) => {
+            return <img src={image} />
+          })}
+        </Carousel>
         <Program />
         <Colors />
         <Map />
