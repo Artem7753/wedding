@@ -3,7 +3,7 @@ import "./styles.scss";
 
 export const Map = () => {
   return (
-    <section class="map" id="#where">
+    <section class="map" id="where">
       <h2>Будем рады видеть вас на нашей свадьбе!</h2>
       <div class="map__frame">
         <iframe

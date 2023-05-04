@@ -1,7 +1,7 @@
 .video-bg {
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 700px;
     overflow: hidden;
   }
   
@@ -33,15 +33,24 @@
     color: #fff;
     z-index: 1;
   }
+
+  .date {
+    font-size: 40px !important;
+  }
+
+  .video-bg__content {
+    font-family: 'zapfino';
+  }
   
   .video-bg__content h2 {
-    font-size: 32px;
+    font-family: 'zapfino';
+    font-size: 90px;
     font-weight: bold;
     margin-bottom: 20px;
   }
   
   .video-bg__content p {
-    font-size: 18px;
+    font-size: 60px;
   }
   
   .video-bg__images {

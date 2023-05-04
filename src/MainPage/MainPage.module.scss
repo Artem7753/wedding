@@ -7,13 +7,26 @@
   flex-direction: column;
 }
 
+.imageStyle {
+  height: 500px;
+  img {
+    object-fit: contain;
+    height: 500px;
+  }
+}
+
+.photoWrapper {
+  margin-top: 12px;
+}
+
 .header {
   display: flex;
   justify-content: flex-end;
+  max-width: 1200px;
   width: 100%;
   position: fixed;
+  margin: auto;
   z-index: 1;
-  right: 0;
   background-color: rgba(0, 0, 0, 0.428);
 }
 

@@ -3,7 +3,7 @@ import "./styles.scss";
 
 export const Program = () => {
   return (
-    <section class="program" id="#when">
+    <section class="program" id="when">
       <h2>Программа мероприятия</h2>
       <ul class="program__list">
         <li class="program__item">
