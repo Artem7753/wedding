@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundVideo from "../../assets/backround.mp4";
+import backgroundVideo from "../../assets/background.mp4";
 import styles from "./styles.scss";
 
 export const Banner = () => {
