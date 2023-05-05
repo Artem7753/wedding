@@ -9,7 +9,6 @@ import {
 import { lazy, Suspense, useEffect } from "react";
 
 const MainPage = lazy(() => import("./MainPage/MainPage.jsx"));
-const InfoPage = lazy(() => import("./InfoPage/InfoPage.jsx"));
 
 function App() {
   return (
@@ -18,7 +17,7 @@ function App() {
         <Suspense fallback={<div>Loading</div>}>
           <Routes>
             <Route path="/guest/:who" element={<MainPage />} />
-            <Route exact path="/" element={<InfoPage />} />
+            <Route path="*" element={<MainPage />} />
           </Routes>
         </Suspense>
       </BrowserRouter>
