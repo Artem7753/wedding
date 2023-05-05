@@ -23,6 +23,27 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
   }
+
+  .description_wrapper {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(57, 187, 146, 0.244);
+  }
+
+  .banner_title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .banner_text {
+    max-width: 400px;
+    margin: auto;
+    font-size: 20px;
+  }
   
   .video-bg__content {
     position: absolute;
